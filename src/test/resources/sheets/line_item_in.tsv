@@ -1,0 +1,10 @@
+Day	Time(m)	Distance(m)	Time Per Distance
+0	21.05	2.10	=B:B / C:C
+1	21.05	2.10	=B:B / C:C
+2	21.46	2.26	=B:B / C:C
+3	22.66	2.35	=B:B / C:C
+4	23.86	2.51	=B:B / C:C
+5	24.98	2.64	=B:B / C:C
+
+Total Distance	=SUM(C2:C7) & " m"
+Total Time	=SUM(B2:B7) & " min"

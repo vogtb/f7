@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./target/lib",
+    "module": "ESNext",
+    "noImplicitAny": true,
+    "lib": [
+      "ESNext",
+      "dom"
+    ],
+    "target": "ESNext",
+    "isolatedModules": false,
+    "experimentalDecorators": true,
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "checkJs": false,
+    "moduleResolution": "node",
+  },
+  "files": [
+    "./src/test/js/Index.ts"
+  ],
+  "include": [
+    "./src/**/*.ts",
+    "./src/test/**/*.ts"
+  ]
+}

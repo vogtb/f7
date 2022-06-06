@@ -1,0 +1,59 @@
+# Node/Yarn/JS
+node_modules
+*/node_modules
+
+# Dist/Target/Build directories
+dist
+dist/
+target
+target/
+wasm-target
+wasm-target/
+builds/*
+builds
+*/dist
+*/dist/
+*/dist/**
+*/.cache
+*/.cache/
+*/.cache/**
+*/coverage/**
+
+# IDE
+.idea/*
+.idea
+*.iml
+.vscode/
+.vscode/*
+
+# OS
+.DS_Store
+
+# Python
+*.pyc
+*.pyo
+*.profi
+
+# Miscilanous
+*.module-cache
+.firebase/
+specs
+tmp/
+.kube/
+.kube/*
+
+# Logs.
+*.log
+**/*.log
+
+# Env files
+.env
+*.env
+**/.env
+**/*/.env
+**/*.env
+**/*/*.env
+
+out/
+**/out/
+

@@ -1,0 +1,11 @@
+node_modules
+*/node_modules
+
+target
+*/target
+
+vendor
+*/vendor
+
+css/main.css
+server/static

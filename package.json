@@ -1,0 +1,32 @@
+{
+  "name": "f7",
+  "private": true,
+  "version": "0.0.1",
+  "license": "UNLICENSED",
+  "description": "F7 is the library for executing spreadsheets. F7 is short for 'Formula', and is as good a name as any I suppose.",
+  "type": "module",
+  "scripts": {
+    "test": "yarn run clean && yarn run clean-test && yarn run build && tsc -p test.tsconfig.json && cp -r src/main/js/antlr target/main/js/ && node jasmine.conf.js",
+    "tsc": "tsc -p tsconfig.json",
+    "dep:antlr": "cp -r src/main/js/antlr target/lib/",
+    "clean-test": "rm -rf target/test/*",
+    "clean": "rm -rf target/*",
+    "antlr4": "cd src/main/g4 && antlr4 F7.g4 -o ../js/antlr -visitor -Dlanguage=JavaScript && cd ../../..",
+    "webpack": "webpack-cli --display-modules --config webpack.config.js",
+    "build": "yarn run clean && yarn run tsc && yarn run webpack && yarn run dep:antlr"
+  },
+  "dependencies": {
+    "@types/chai": "^4.3.1",
+    "@types/antlr4": "^4.7.2",
+    "@types/sinon": "7.0.13",
+    "class-validator": "^0.11.0",
+    "sinon": "7.3.2",
+    "antlr4": "^4.10.1",
+    "@typescript-eslint/eslint-plugin": "^5.3.1",
+    "@typescript-eslint/parser": "^5.3.1",
+    "eslint": "^8.2.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.4.4",
+    "chai": "^4.3.6"
+  }
+}
